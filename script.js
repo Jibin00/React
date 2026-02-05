@@ -3,7 +3,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const noButton = document.getElementById('noButton');
 
     yesButton.addEventListener('click', () => {
-        alert('Yay! Looking forward to it! ❤️');
+        const gifDisplay = document.getElementById('gifDisplay');
+        const question = document.querySelector('.question');
+        const buttonsContainer = document.querySelector('.buttons');
+
+        gifDisplay.src = 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDUxdjB4cGtjNW93MDB6bTM3OXc1YmUwcWd3eDFzMW90amtlZmNqOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/o75ajIFH0QnQC3nJqv/giphy.gif'; // Placeholder GIF URL
+        gifDisplay.classList.remove('hidden');
+
+        question.classList.add('hidden');
+        buttonsContainer.classList.add('hidden');
     });
 
     const repelOffset = 50; // Minimum distance the button's edge should be from the cursor
