@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const question = document.querySelector('.question');
         const buttonsContainer = document.querySelector('.buttons');
 
-        gifDisplay.src = 'https://share.google/oWjUNjKlZfBjUtg0Z'; // Placeholder GIF URL
+        gifDisplay.src = 'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWs5bGk4djRqMWxpOTlxb3liamh5aGdpZmJ6bWxyb2g2enloZWh1diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26ufdipQqU2lhNA4g/giphy.gif'; // Placeholder GIF URL
         gifDisplay.classList.remove('hidden');
 
         question.classList.add('hidden');
